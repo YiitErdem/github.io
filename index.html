@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,6 +106,7 @@
         <ul class="choices" id="choices"></ul>
         <p id="feedback" style="display: none;"></p>
         <button class="button" id="next" style="display: none; margin: 0 auto;">Sonraki Soru</button>
+        <button class="button" id="report" style="margin-top: 10px;">Hatalı Soru Bildir</button>
     </div>
 </div>
 
@@ -134,6 +136,7 @@
     const scoreElement = document.getElementById('score');
     const feedbackElement = document.getElementById('feedback');
     const questionCountElement = document.getElementById('question-count');
+    const reportButton = document.getElementById('report');
 
     // JSON dosyasını yükle
     fetch('questions.json')
@@ -197,6 +200,19 @@
         });
     }
 
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < maxQuestions) {
+            loadQuestion();
+        } else {
+            showResult();
+        }
+    });
+
+    reportButton.addEventListener('click', () => {
+        alert('Bu soru hatalı olarak bildirildi.');
+    });
+
     function showResult() {
         quizContainer.style.display = 'none';
         resultElement.style.display = 'block';
@@ -222,15 +238,6 @@
     function updateQuestionCount() {
         questionCountElement.textContent = `${currentQuestionIndex + 1}/${maxQuestions} soru`;
     }
-
-    nextButton.addEventListener('click', () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < maxQuestions) {
-            loadQuestion();
-        } else {
-            showResult();
-        }
-    });
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
