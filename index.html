@@ -23,9 +23,6 @@
             text-align: center;
             display: none;
         }
-        #quiz-container, #result {
-            display: none;
-        }
         .question {
             font-size: 20px;
             margin-bottom: 10px;
@@ -126,9 +123,15 @@
 
     // JSON dosyasını yükle
     fetch('questions.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             quizData = data;
+            startScreen.style.display = 'block';
         })
         .catch(error => console.error('Error loading JSON:', error));
 
