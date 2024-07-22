@@ -19,7 +19,7 @@
             flex-direction: column;
             position: relative;
         }
-        #start-screen, #quiz-container, #result, #reports {
+        #start-screen, #quiz-container, #result {
             width: 300px;
             text-align: center;
             display: none;
@@ -81,22 +81,8 @@
             font-size: 14px;
             color: #555;
         }
-        #report {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            padding: 5px 10px;
-        }
         #scoreboard {
             margin-top: 20px;
-        }
-        #report-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 12px;
-            padding: 5px 10px;
         }
         @media (max-width: 600px) {
             #quiz-container {
@@ -121,14 +107,13 @@
 
 <div id="quiz-container">
     <div id="progress">
-        <span id="question-count">0/9 soru</span>
+        <span id="question-count">0/8 soru</span>
     </div>
     <div id="quiz">
         <div class="question" id="question"></div>
         <ul class="choices" id="choices"></ul>
         <p id="feedback" style="display: none;"></p>
         <button class="button" id="next" style="display: none; margin: 0 auto;">Sonraki Soru</button>
-        <button class="button" id="report">Hatalı Soru Bildir</button>
     </div>
 </div>
 
@@ -145,22 +130,14 @@
     </div>
 </div>
 
-<div id="reports">
-    <h2>Hatalı Sorular</h2>
-    <ul id="report-list"></ul>
-    <button class="button" onclick="hideReports()">Kapat</button>
-</div>
-
 <div id="footer">yiit♥sude-2024</div>
-
-<button class="button" id="report-button">Hatalı Soruları Görüntüle</button>
 
 <script>
     let quizData = [];
     let shuffledQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
-    const maxQuestions = 9;
+    const maxQuestions = 8;
     const pointsPerQuestion = 25;
 
     const startButton = document.getElementById('start-button');
@@ -173,17 +150,12 @@
     const scoreElement = document.getElementById('score');
     const feedbackElement = document.getElementById('feedback');
     const questionCountElement = document.getElementById('question-count');
-    const reportButton = document.getElementById('report');
     const resultImage = document.getElementById('result-image');
     const playerNameInput = document.getElementById('player-name');
     const saveScoreButton = document.getElementById('save-score');
     const scoreList = document.getElementById('score-list');
-    const reportList = document.getElementById('report-list');
-    const reportsElement = document.getElementById('reports');
-    const reportButtonView = document.getElementById('report-button');
 
     let scores = JSON.parse(localStorage.getItem('scores')) || [];
-    let reports = JSON.parse(localStorage.getItem('reports')) || [];
 
     // JSON dosyasını yükle
     fetch('questions.json')
@@ -216,22 +188,20 @@
             const li = document.createElement('li');
             li.textContent = choice;
             li.addEventListener('click', () => {
-                checkAnswer(choice, li);
+                checkAnswer(choice, currentQuestion.correct, li);
             });
             choicesElement.appendChild(li);
         });
         updateQuestionCount();
     }
 
-    function checkAnswer(selectedChoice, li) {
-        const correctAnswer = shuffledQuestions[currentQuestionIndex].correct;
+    function checkAnswer(selectedChoice, correctAnswer, li) {
         if (selectedChoice === correctAnswer) {
             score += pointsPerQuestion;
             feedbackElement.textContent = "Doğru!";
             feedbackElement.classList.add('correct');
             feedbackElement.classList.remove('incorrect');
             li.classList.add('correct-answer');
-            // Diğer seçenekleri gri yap
             document.querySelectorAll('.choices li').forEach(choice => {
                 if (choice !== li) {
                     choice.classList.add('gray');
@@ -243,7 +213,6 @@
             feedbackElement.classList.remove('correct');
             li.classList.add('incorrect-answer');
 
-            // Doğru cevabı yeşil olarak işaretle ve diğer seçenekleri gri yap
             document.querySelectorAll('.choices li').forEach(choice => {
                 if (choice.textContent === correctAnswer) {
                     choice.classList.add('correct-answer');
@@ -257,7 +226,7 @@
 
         // Diğer seçeneklerin seçilememesi için olay dinleyicilerini kaldırın
         document.querySelectorAll('.choices li').forEach(choice => {
-            choice.removeEventListener('click', checkAnswer);
+            choice.style.pointerEvents = 'none';
         });
     }
 
@@ -269,31 +238,6 @@
             showResult();
         }
     });
-
-    reportButton.addEventListener('click', () => {
-        const reportedQuestion = shuffledQuestions[currentQuestionIndex].question;
-        reports.push(reportedQuestion);
-        localStorage.setItem('reports', JSON.stringify(reports));
-        alert('Bu soru hatalı olarak bildirildi.');
-    });
-
-    reportButtonView.addEventListener('click', () => {
-        reportsElement.style.display = 'block';
-        updateReportList();
-    });
-
-    function updateReportList() {
-        reportList.innerHTML = '';
-        reports.forEach((report, index) => {
-            const li = document.createElement('li');
-            li.textContent = `${index + 1}. ${report}`;
-            reportList.appendChild(li);
-        });
-    }
-
-    function hideReports() {
-        reportsElement.style.display = 'none';
-    }
 
     function showResult() {
         quizContainer.style.display = 'none';
@@ -308,6 +252,7 @@
         const playerName = playerNameInput.value.trim();
         if (playerName) {
             scores.push({ name: playerName, score: score });
+            scores = scores.slice(-10); // Sadece son 10 skoru tut
             localStorage.setItem('scores', JSON.stringify(scores));
             updateScoreboard();
             playerNameInput.style.display = 'none';
@@ -317,7 +262,7 @@
 
     function updateScoreboard() {
         scoreList.innerHTML = '';
-        scores.slice(-5).forEach((entry, index) => {
+        scores.forEach((entry, index) => {
             const li = document.createElement('li');
             li.textContent = `${entry.name}: ${entry.score}`;
             scoreList.appendChild(li);
