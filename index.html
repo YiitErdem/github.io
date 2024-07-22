@@ -17,6 +17,7 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
+            position: relative;
         }
         #start-screen, #quiz-container, #result {
             width: 300px;
@@ -33,7 +34,15 @@
         }
         .choices li {
             margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .choices li:hover {
+            background-color: #4caf50;
+            color: white;
         }
         .button {
             margin-top: 10px;
@@ -58,6 +67,13 @@
         }
         #progress {
             margin-top: 10px;
+        }
+        #footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: #555;
         }
         @media (max-width: 600px) {
             #quiz-container {
@@ -87,9 +103,8 @@
     <div id="quiz">
         <div class="question" id="question"></div>
         <ul class="choices" id="choices"></ul>
-        <button class="button" id="submit">Cevapla</button>
-        <button class="button" id="next" style="display: none;">Sonraki Soru</button>
         <p id="feedback" style="display: none;"></p>
+        <button class="button" id="next" style="display: none; margin: 0 auto;">Sonraki Soru</button>
     </div>
 </div>
 
@@ -99,6 +114,8 @@
     <ul id="review"></ul>
     <button class="button" onclick="restartQuiz()">Tekrar Başla</button>
 </div>
+
+<div id="footer">yiit♥sude-2024</div>
 
 <script>
     let quizData = [];
@@ -112,7 +129,6 @@
     const quizContainer = document.getElementById('quiz-container');
     const questionElement = document.getElementById('question');
     const choicesElement = document.getElementById('choices');
-    const submitButton = document.getElementById('submit');
     const nextButton = document.getElementById('next');
     const resultElement = document.getElementById('result');
     const scoreElement = document.getElementById('score');
@@ -142,7 +158,6 @@
 
     function loadQuestion() {
         feedbackElement.style.display = 'none';
-        submitButton.style.display = 'block';
         nextButton.style.display = 'none';
         const currentQuestion = shuffledQuestions[currentQuestionIndex];
         questionElement.textContent = currentQuestion.question;
@@ -151,12 +166,35 @@
             const li = document.createElement('li');
             li.textContent = choice;
             li.addEventListener('click', () => {
-                document.querySelectorAll('.choices li').forEach(li => li.classList.remove('selected'));
-                li.classList.add('selected');
+                checkAnswer(choice, li);
             });
             choicesElement.appendChild(li);
         });
         updateQuestionCount();
+    }
+
+    function checkAnswer(selectedChoice, li) {
+        const correctAnswer = shuffledQuestions[currentQuestionIndex].correct;
+        if (selectedChoice === correctAnswer) {
+            score++;
+            feedbackElement.textContent = "Doğru!";
+            feedbackElement.classList.add('correct');
+            feedbackElement.classList.remove('incorrect');
+        } else {
+            feedbackElement.textContent = `Yanlış! Doğru cevap: ${correctAnswer}`;
+            feedbackElement.classList.add('incorrect');
+            feedbackElement.classList.remove('correct');
+        }
+        feedbackElement.style.display = 'block';
+        nextButton.style.display = 'block';
+
+        // Seçilen cevabı belirlemek için sınıf ekleyin
+        li.classList.add(selectedChoice === correctAnswer ? 'correct-answer' : 'incorrect-answer');
+        
+        // Diğer seçeneklerin seçilememesi için olay dinleyicilerini kaldırın
+        document.querySelectorAll('.choices li').forEach(choice => {
+            choice.removeEventListener('click', checkAnswer);
+        });
     }
 
     function showResult() {
@@ -184,27 +222,6 @@
     function updateQuestionCount() {
         questionCountElement.textContent = `${currentQuestionIndex + 1}/${maxQuestions} soru`;
     }
-
-    submitButton.addEventListener('click', () => {
-        const selectedChoice = document.querySelector('.choices li.selected');
-        if (!selectedChoice) return;
-
-        const correctAnswer = shuffledQuestions[currentQuestionIndex].correct;
-
-        if (selectedChoice.textContent === correctAnswer) {
-            score++;
-            feedbackElement.textContent = "Doğru!";
-            feedbackElement.classList.add('correct');
-            feedbackElement.classList.remove('incorrect');
-        } else {
-            feedbackElement.textContent = `Yanlış! Doğru cevap: ${correctAnswer}`;
-            feedbackElement.classList.add('incorrect');
-            feedbackElement.classList.remove('correct');
-        }
-        feedbackElement.style.display = 'block';
-        submitButton.style.display = 'none';
-        nextButton.style.display = 'block';
-    });
 
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
