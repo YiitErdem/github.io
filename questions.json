@@ -1,92 +1,1502 @@
 [
     {
         "question": "Albüm kapağında dört adam bir yaya geçidinde yan yana yürürken görülüyorlar. Arkada bir araba park etmiş ve beyaz bir Volkswagen var. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Let It Be - The Beatles", "Abbey Road - The Beatles", "Sticky Fingers - The Rolling Stones", "A Night at the Opera - Queen"],
+        "choices": [
+            "Let It Be - The Beatles",
+            "Abbey Road - The Beatles",
+            "Sticky Fingers - The Rolling Stones",
+            "A Night at the Opera - Queen"
+        ],
         "correct": "Abbey Road - The Beatles"
     },
     {
         "question": "Albüm kapağında siyah bir arka plan üzerinde beyaz bir çizgiyle stilize edilmiş bir adamın yüzü ve şapkası görülüyor. Şapkanın altında büyük beyaz harflerle albüm adı yazıyor. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Back in Black - AC/DC", "The Wall - Pink Floyd", "Led Zeppelin IV - Led Zeppelin", "Nevermind - Nirvana"],
+        "choices": [
+            "Back in Black - AC/DC",
+            "The Wall - Pink Floyd",
+            "Led Zeppelin IV - Led Zeppelin",
+            "Nevermind - Nirvana"
+        ],
         "correct": "Back in Black - AC/DC"
     },
     {
         "question": "Albüm kapağında siyah bir arka plan üzerinde bir prizma görülüyor. Prizmanın bir tarafından giren beyaz ışık, diğer tarafından gökkuşağı renklerine ayrılarak çıkıyor. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Dark Side of the Moon - Pink Floyd", "Led Zeppelin IV - Led Zeppelin", "Who's Next - The Who", "Hotel California - Eagles"],
+        "choices": [
+            "Dark Side of the Moon - Pink Floyd",
+            "Led Zeppelin IV - Led Zeppelin",
+            "Who's Next - The Who",
+            "Hotel California - Eagles"
+        ],
         "correct": "Dark Side of the Moon - Pink Floyd"
     },
     {
         "question": "Albüm kapağında büyük bir yüz ifadesi var, yüz ifadesi dehşete kapılmış gibi görünüyor. Albüm kapağında mavi, kırmızı ve beyaz renkler hakim. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["In the Court of the Crimson King - King Crimson", "The Wall - Pink Floyd", "A Night at the Opera - Queen", "Physical Graffiti - Led Zeppelin"],
+        "choices": [
+            "In the Court of the Crimson King - King Crimson",
+            "The Wall - Pink Floyd",
+            "A Night at the Opera - Queen",
+            "Physical Graffiti - Led Zeppelin"
+        ],
         "correct": "In the Court of the Crimson King - King Crimson"
     },
     {
         "question": "Albüm kapağında çıplak çocuklar turuncu bir arka plan üzerinde büyük taşlara tırmanıyorlar. Taşların şekli biraz doğaüstü görünüyor ve gökyüzü parlak bir turuncu renkte. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Led Zeppelin IV - Led Zeppelin", "Sticky Fingers - The Rolling Stones", "Houses of the Holy - Led Zeppelin", "A Night at the Opera - Queen"],
+        "choices": [
+            "Led Zeppelin IV - Led Zeppelin",
+            "Sticky Fingers - The Rolling Stones",
+            "Houses of the Holy - Led Zeppelin",
+            "A Night at the Opera - Queen"
+        ],
         "correct": "Houses of the Holy - Led Zeppelin"
     },
     {
         "question": "Albüm kapağında siyah bir arka plan üzerinde, mavi ve beyaz çizgilerle oluşturulmuş geometrik şekiller yer alıyor. Şekiller bir tür soyut sanat tarzında ve ortasında bir ışık parlaması var. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Random Access Memories - Daft Punk", "Discovery - Daft Punk", "Tron: Legacy - Daft Punk", "Human After All - Daft Punk"],
+        "choices": [
+            "Random Access Memories - Daft Punk",
+            "Discovery - Daft Punk",
+            "Tron: Legacy - Daft Punk",
+            "Human After All - Daft Punk"
+        ],
         "correct": "Tron: Legacy - Daft Punk"
     },
     {
         "question": "Albüm kapağında sanatçının yüzü, kırmızı ve mavi renklerde, soyut bir şekilde gösterilmiş. Yüzünde gözlükler var ve yüzünün yarısı karanlıkta kalmış. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["After Hours - The Weeknd", "Starboy - The Weeknd", "Beauty Behind the Madness - The Weeknd", "Blinding Lights - The Weeknd"],
+        "choices": [
+            "After Hours - The Weeknd",
+            "Starboy - The Weeknd",
+            "Beauty Behind the Madness - The Weeknd",
+            "Blinding Lights - The Weeknd"
+        ],
         "correct": "Starboy - The Weeknd"
     },
     {
         "question": "Albüm kapağında bir ormanın içinde duran genç bir kadın var. Kadın, beyaz bir elbise giymiş ve etrafı ağaçlarla çevrili. Arka planda yoğun bir sis var. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Lover - Taylor Swift", "Happier Than Ever - Billie Eilish", "Ultraviolence - Lana Del Rey", "Folklore - Taylor Swift"],
+        "choices": [
+            "Lover - Taylor Swift",
+            "Happier Than Ever - Billie Eilish",
+            "Ultraviolence - Lana Del Rey",
+            "Folklore - Taylor Swift"
+        ],
         "correct": "Folklore - Taylor Swift"
     },
     {
         "question": "Albüm kapağında bir oturma odasında büyük bir parti olduğu görülüyor. Birçok insan çeşitli eğlencelerle meşgul. Kapakta retro bir his var ve renkler oldukça parlak. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Rumours - Fleetwood Mac", "Hot Fuss - The Killers", "The Dark Side of the Moon - Pink Floyd", "Sgt. Pepper's Lonely Hearts Club Band - The Beatles"],
+        "choices": [
+            "Rumours - Fleetwood Mac",
+            "Hot Fuss - The Killers",
+            "The Dark Side of the Moon - Pink Floyd",
+            "Sgt. Pepper's Lonely Hearts Club Band - The Beatles"
+        ],
         "correct": "Sgt. Pepper's Lonely Hearts Club Band - The Beatles"
     },
     {
         "question": "Albüm kapağında bir yılan ve elma ağacı yer alıyor. Ağacın dalları arasında gizemli bir atmosfer var ve kapakta gotik bir hava hakim. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Fearless - Taylor Swift", "Mellon Collie and the Infinite Sadness - The Smashing Pumpkins", "Songs for the Deaf - Queens of the Stone Age", "Dangerous - Michael Jackson"],
+        "choices": [
+            "Fearless - Taylor Swift",
+            "Mellon Collie and the Infinite Sadness - The Smashing Pumpkins",
+            "Songs for the Deaf - Queens of the Stone Age",
+            "Dangerous - Michael Jackson"
+        ],
         "correct": "Mellon Collie and the Infinite Sadness - The Smashing Pumpkins"
     },
     {
         "question": "Albüm kapağında beyaz bir arka plan üzerinde, yalnızca sanatçının adı ve albüm adı büyük harflerle yazılmış. Albüm kapağı oldukça sade ve minimal bir tasarıma sahip. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["25 - Adele", "The White Album - The Beatles", "Dangerous Woman - Ariana Grande", "1989 - Taylor Swift"],
+        "choices": [
+            "25 - Adele",
+            "The White Album - The Beatles",
+            "Dangerous Woman - Ariana Grande",
+            "1989 - Taylor Swift"
+        ],
         "correct": "The White Album - The Beatles"
     },
     {
         "question": "Albüm kapağında bir yolun ortasında duran yalnız bir adam var. Adamın gölgesi uzun bir şekilde yola uzanıyor ve arka planda güneş batıyor. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Highway 61 Revisited - Bob Dylan", "American Idiot - Green Day", "Harvest - Neil Young", "Born to Run - Bruce Springsteen"],
+        "choices": [
+            "Highway 61 Revisited - Bob Dylan",
+            "American Idiot - Green Day",
+            "Harvest - Neil Young",
+            "Born to Run - Bruce Springsteen"
+        ],
         "correct": "Born to Run - Bruce Springsteen"
     },
     {
         "question": "Albüm kapağında bir televizyon ekranında karlı bir görüntü var ve ekranın etrafında çeşitli elektronik cihazlar bulunuyor. Kapakta retro bir bilim kurgu havası var. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["OK Computer - Radiohead", "The Wall - Pink Floyd", "Demon Days - Gorillaz", "Is This It - The Strokes"],
+        "choices": [
+            "OK Computer - Radiohead",
+            "The Wall - Pink Floyd",
+            "Demon Days - Gorillaz",
+            "Is This It - The Strokes"
+        ],
         "correct": "OK Computer - Radiohead"
     },
     {
         "question": "Albüm kapağında, kırmızı bir arka plan üzerinde beyaz bir şimşek işareti yer alıyor. Şimşek işaretinin içi mavi ve kırmızı renklerle dolu. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Ziggy Stardust - David Bowie", "Heroes - David Bowie", "Let’s Dance - David Bowie", "Aladdin Sane - David Bowie"],
+        "choices": [
+            "Ziggy Stardust - David Bowie",
+            "Heroes - David Bowie",
+            "Let’s Dance - David Bowie",
+            "Aladdin Sane - David Bowie"
+        ],
         "correct": "Aladdin Sane - David Bowie"
     },
     {
         "question": "Albüm kapağında sanatçı, bir direğin tepesinde oturmuş ve mavi gökyüzüne doğru bakıyor. Sanatçı siyah bir elbise giymiş ve kapak genel olarak sade bir tasarıma sahip. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["25 - Adele", "Back to Black - Amy Winehouse", "21 - Adele", "Lemonade - Beyoncé"],
+        "choices": [
+            "25 - Adele",
+            "Back to Black - Amy Winehouse",
+            "21 - Adele",
+            "Lemonade - Beyoncé"
+        ],
         "correct": "21 - Adele"
     },
     {
         "question": "Albüm kapağında, havada asılı duran bir bomba (füze) görülüyor. Füzenin arka planında düz bir gri ton hakim ve albüm adı ile grup adı küçük harflerle yazılmış. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Wasting Light - Foo Fighters", "Echoes, Silence, Patience & Grace - Foo Fighters", "In Your Honor - Foo Fighters", "The Colour and the Shape - Foo Fighters"],
+        "choices": [
+            "Wasting Light - Foo Fighters",
+            "Echoes, Silence, Patience & Grace - Foo Fighters",
+            "In Your Honor - Foo Fighters",
+            "The Colour and the Shape - Foo Fighters"
+        ],
         "correct": "Echoes, Silence, Patience & Grace - Foo Fighters"
     },
     {
         "question": "Albüm kapağında, Jean-Michel Basquiat'ın bir sanat eseri bulunuyor. Eser, renkli ve kaotik çizgilerle dolu, siyah ve beyaz figürlerin yer aldığı bir kompozisyon içeriyor. Albüm adı ve grup adı sanat eseri üzerinde belirgin şekilde yazılmış. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Is This It - The Strokes", "Room on Fire - The Strokes", "Angles - The Strokes", "The New Abnormal - The Strokes"],
+        "choices": [
+            "Is This It - The Strokes",
+            "Room on Fire - The Strokes",
+            "Angles - The Strokes",
+            "The New Abnormal - The Strokes"
+        ],
         "correct": "The New Abnormal - The Strokes"
     },
     {
         "question": "Albüm kapağında, çeşitli renklerde bloklar halinde yerleştirilmiş kelimeler ve cümleler görülüyor. Bloklar ve yazılar kaotik bir düzen içinde yer alıyor. Arka plan genellikle koyu renklerde olup, çeşitli sosyal ve politik mesajlar içeren kelimeler bulunuyor. Bu albüm kapağı hangi albüme aittir?",
-        "choices": ["Kid A - Radiohead", "Amnesiac - Radiohead", "Hail to the Thief - Radiohead", "OK Computer - Radiohead"],
+        "choices": [
+            "Kid A - Radiohead",
+            "Amnesiac - Radiohead",
+            "Hail to the Thief - Radiohead",
+            "OK Computer - Radiohead"
+        ],
         "correct": "Hail to the Thief - Radiohead"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında sanatçı, bir nehrin kenarında gitar çalarken görülüyor. Arka planda ormanlık bir alan ve güneşin batışı var. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Harvest - Neil Young",
+            "Unplugged - Eric Clapton",
+            "Born to Run - Bruce Springsteen",
+            "American Idiot - Green Day"
+        ],
+        "correct": "Harvest - Neil Young"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
+    },
+    {
+        "question": "Albüm kapağında büyük bir kırmızı elma var. Elmanın üzerinde küçük bir adam elmayı yiyor ve arka planda büyük beyaz bir bina görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Walls - Kings of Leon",
+            "Viva La Vida - Coldplay",
+            "Abbey Road - The Beatles",
+            "The White Album - The Beatles"
+        ],
+        "correct": "Walls - Kings of Leon"
+    },
+    {
+        "question": "Albüm kapağında mavi bir gökyüzü ve altın rengi bir güneş yer alıyor. Gökyüzünde beyaz bulutlar var ve arka planda ufak bir şehir silueti görülüyor. Bu albüm kapağı hangi albüme aittir?",
+        "choices": [
+            "Parachutes - Coldplay",
+            "Morning Phase - Beck",
+            "Room on Fire - The Strokes",
+            "The Joshua Tree - U2"
+        ],
+        "correct": "Parachutes - Coldplay"
     }
 ]
