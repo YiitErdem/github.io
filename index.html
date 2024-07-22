@@ -27,6 +27,12 @@
         .button {
             margin-top: 10px;
         }
+        .correct-answer {
+            color: green;
+        }
+        .incorrect-answer {
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -45,19 +51,7 @@
 </div>
 
 <script>
-    const quizData = [
-        {
-            question: "Türkiye'nin başkenti neresidir?",
-            choices: ["İstanbul", "Ankara", "İzmir", "Bursa"],
-            correct: "Ankara"
-        },
-        {
-            question: "En büyük gezegen hangisidir?",
-            choices: ["Mars", "Jüpiter", "Venüs", "Satürn"],
-            correct: "Jüpiter"
-        }
-    ];
-
+    let quizData = [];
     let currentQuestionIndex = 0;
     let score = 0;
 
@@ -66,6 +60,15 @@
     const submitButton = document.getElementById('submit');
     const resultElement = document.getElementById('result');
     const scoreElement = document.getElementById('score');
+
+    // JSON dosyasını yükle
+    fetch('questions.json')
+        .then(response => response.json())
+        .then(data => {
+            quizData = data;
+            loadQuestion();
+        })
+        .catch(error => console.error('Error loading JSON:', error));
 
     function loadQuestion() {
         const currentQuestion = quizData[currentQuestionIndex];
@@ -101,20 +104,39 @@
         const selectedChoice = document.querySelector('input[name="choice"]:checked');
         if (!selectedChoice) return;
 
-        if (selectedChoice.value === quizData[currentQuestionIndex].correct) {
+        const correctAnswer = quizData[currentQuestionIndex].correct;
+
+        if (selectedChoice.value === correctAnswer) {
             score++;
+            nextQuestion();
+        } else {
+            showCorrectAnswer(correctAnswer);
         }
+    });
 
+    function nextQuestion() {
         currentQuestionIndex++;
-
         if (currentQuestionIndex < quizData.length) {
             loadQuestion();
         } else {
             showResult();
         }
-    });
+    }
 
-    loadQuestion();
+    function showCorrectAnswer(correctAnswer) {
+        const choices = document.querySelectorAll('input[name="choice"]');
+        choices.forEach(choice => {
+            if (choice.value === correctAnswer) {
+                choice.parentElement.classList.add('correct-answer');
+            } else if (choice.checked) {
+                choice.parentElement.classList.add('incorrect-answer');
+            }
+        });
+
+        setTimeout(() => {
+            nextQuestion();
+        }, 2000);
+    }
 </script>
 
 </body>
