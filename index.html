@@ -121,7 +121,7 @@
 
 <div id="quiz-container">
     <div id="progress">
-        <span id="question-count">0/8 soru</span>
+        <span id="question-count">0/9 soru</span>
     </div>
     <div id="quiz">
         <div class="question" id="question"></div>
@@ -160,7 +160,7 @@
     let shuffledQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
-    const maxQuestions = 8;
+    const maxQuestions = 9;
     const pointsPerQuestion = 25;
 
     const startButton = document.getElementById('start-button');
@@ -186,7 +186,7 @@
     let reports = JSON.parse(localStorage.getItem('reports')) || [];
 
     // JSON dosyasını yükle
-    fetch('data/questions.json')
+    fetch('questions.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
