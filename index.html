@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +51,10 @@
         }
         .choices li.incorrect-answer {
             background-color: red;
+            color: white;
+        }
+        .choices li.gray {
+            background-color: gray;
             color: white;
         }
         .button {
@@ -194,16 +199,24 @@
             feedbackElement.classList.add('correct');
             feedbackElement.classList.remove('incorrect');
             li.classList.add('correct-answer');
+            // Diğer seçenekleri gri yap
+            document.querySelectorAll('.choices li').forEach(choice => {
+                if (choice !== li) {
+                    choice.classList.add('gray');
+                }
+            });
         } else {
             feedbackElement.textContent = `Yanlış! Doğru cevap: ${correctAnswer}`;
             feedbackElement.classList.add('incorrect');
             feedbackElement.classList.remove('correct');
             li.classList.add('incorrect-answer');
 
-            // Doğru cevabı yeşil olarak işaretle
+            // Doğru cevabı yeşil olarak işaretle ve diğer seçenekleri gri yap
             document.querySelectorAll('.choices li').forEach(choice => {
                 if (choice.textContent === correctAnswer) {
                     choice.classList.add('correct-answer');
+                } else if (choice !== li) {
+                    choice.classList.add('gray');
                 }
             });
         }
