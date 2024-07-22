@@ -204,7 +204,6 @@
                 if (choice !== li) {
                     choice.classList.add('gray');
                 }
-                choice.style.pointerEvents = 'none';
             });
         } else {
             displayFeedback(`Yanlış! Doğru cevap: ${correctAnswer}`, 'incorrect');
@@ -215,9 +214,11 @@
                 } else if (choice !== li) {
                     choice.classList.add('gray');
                 }
-                choice.style.pointerEvents = 'none';
             });
         }
+        document.querySelectorAll('.choices li').forEach(choice => {
+            choice.removeEventListener('click', checkAnswer);
+        });
         currentQuestionIndex++;
         nextButton.style.display = 'block';
     }
