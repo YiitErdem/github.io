@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Oyunu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #quiz-container {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .choices {
+            list-style: none;
+            padding: 0;
+        }
+        .choices li {
+            margin: 5px 0;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <div id="quiz">
+        <div class="question" id="question"></div>
+        <ul class="choices" id="choices"></ul>
+        <button class="button" id="submit">Cevapla</button>
+    </div>
+    <div id="result" style="display: none;">
+        <h2>Sonuç</h2>
+        <p id="score"></p>
+        <button class="button" onclick="restartQuiz()">Tekrar Başla</button>
+    </div>
+</div>
+
+<script>
+    const quizData = [
+        {
+            question: "Türkiye'nin başkenti neresidir?",
+            choices: ["İstanbul", "Ankara", "İzmir", "Bursa"],
+            correct: "Ankara"
+        },
+        {
+            question: "En büyük gezegen hangisidir?",
+            choices: ["Mars", "Jüpiter", "Venüs", "Satürn"],
+            correct: "Jüpiter"
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    const questionElement = document.getElementById('question');
+    const choicesElement = document.getElementById('choices');
+    const submitButton = document.getElementById('submit');
+    const resultElement = document.getElementById('result');
+    const scoreElement = document.getElementById('score');
+
+    function loadQuestion() {
+        const currentQuestion = quizData[currentQuestionIndex];
+        questionElement.textContent = currentQuestion.question;
+        choicesElement.innerHTML = '';
+        currentQuestion.choices.forEach(choice => {
+            const li = document.createElement('li');
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.name = 'choice';
+            input.value = choice;
+            li.appendChild(input);
+            li.appendChild(document.createTextNode(choice));
+            choicesElement.appendChild(li);
+        });
+    }
+
+    function showResult() {
+        quiz.style.display = 'none';
+        resultElement.style.display = 'block';
+        scoreElement.textContent = `Skorunuz: ${score}/${quizData.length}`;
+    }
+
+    function restartQuiz() {
+        currentQuestionIndex = 0;
+        score = 0;
+        quiz.style.display = 'block';
+        resultElement.style.display = 'none';
+        loadQuestion();
+    }
+
+    submitButton.addEventListener('click', () => {
+        const selectedChoice = document.querySelector('input[name="choice"]:checked');
+        if (!selectedChoice) return;
+
+        if (selectedChoice.value === quizData[currentQuestionIndex].correct) {
+            score++;
+        }
+
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < quizData.length) {
+            loadQuestion();
+        } else {
+            showResult();
+        }
+    });
+
+    loadQuestion();
+</script>
+
+</body>
+</html>
