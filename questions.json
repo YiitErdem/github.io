@@ -1,0 +1,12 @@
+[
+    {
+        "question": "Türkiye'nin başkenti neresidir?",
+        "choices": ["İstanbul", "Ankara", "İzmir", "Bursa"],
+        "correct": "Ankara"
+    },
+    {
+        "question": "En büyük gezegen hangisidir?",
+        "choices": ["Mars", "Jüpiter", "Venüs", "Satürn"],
+        "correct": "Jüpiter"
+    }
+]
