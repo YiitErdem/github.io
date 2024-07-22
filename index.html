@@ -33,6 +33,7 @@
         }
         .choices li {
             margin: 5px 0;
+            cursor: pointer;
         }
         .button {
             margin-top: 10px;
@@ -56,14 +57,7 @@
             font-size: 18px;
         }
         #progress {
-            width: 100%;
-            background-color: #ddd;
             margin-top: 10px;
-        }
-        #progress-bar {
-            width: 0%;
-            height: 20px;
-            background-color: #4caf50;
         }
         @media (max-width: 600px) {
             #quiz-container {
@@ -88,12 +82,13 @@
 
 <div id="quiz-container">
     <div id="progress">
-        <div id="progress-bar"></div>
+        <span id="question-count">0/10 soru</span>
     </div>
     <div id="quiz">
         <div class="question" id="question"></div>
         <ul class="choices" id="choices"></ul>
         <button class="button" id="submit">Cevapla</button>
+        <button class="button" id="next" style="display: none;">Sonraki Soru</button>
         <p id="feedback" style="display: none;"></p>
     </div>
 </div>
@@ -107,8 +102,10 @@
 
 <script>
     let quizData = [];
+    let shuffledQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
+    const maxQuestions = 10;
 
     const startButton = document.getElementById('start-button');
     const startScreen = document.getElementById('start-screen');
@@ -116,10 +113,11 @@
     const questionElement = document.getElementById('question');
     const choicesElement = document.getElementById('choices');
     const submitButton = document.getElementById('submit');
+    const nextButton = document.getElementById('next');
     const resultElement = document.getElementById('result');
     const scoreElement = document.getElementById('score');
     const feedbackElement = document.getElementById('feedback');
-    const progressBar = document.getElementById('progress-bar');
+    const questionCountElement = document.getElementById('question-count');
 
     // JSON dosyasını yükle
     fetch('questions.json')
@@ -131,6 +129,7 @@
         })
         .then(data => {
             quizData = data;
+            shuffledQuestions = shuffleArray(quizData).slice(0, maxQuestions);
             startScreen.style.display = 'block';
         })
         .catch(error => console.error('Error loading JSON:', error));
@@ -143,28 +142,30 @@
 
     function loadQuestion() {
         feedbackElement.style.display = 'none';
-        const currentQuestion = quizData[currentQuestionIndex];
+        submitButton.style.display = 'block';
+        nextButton.style.display = 'none';
+        const currentQuestion = shuffledQuestions[currentQuestionIndex];
         questionElement.textContent = currentQuestion.question;
         choicesElement.innerHTML = '';
         currentQuestion.choices.forEach(choice => {
             const li = document.createElement('li');
-            const input = document.createElement('input');
-            input.type = 'radio';
-            input.name = 'choice';
-            input.value = choice;
-            li.appendChild(input);
-            li.appendChild(document.createTextNode(choice));
+            li.textContent = choice;
+            li.addEventListener('click', () => {
+                document.querySelectorAll('.choices li').forEach(li => li.classList.remove('selected'));
+                li.classList.add('selected');
+            });
             choicesElement.appendChild(li);
         });
+        updateQuestionCount();
     }
 
     function showResult() {
         quizContainer.style.display = 'none';
         resultElement.style.display = 'block';
-        scoreElement.textContent = `Skorunuz: ${score}/${quizData.length}`;
+        scoreElement.textContent = `Skorunuz: ${score}/${maxQuestions}`;
         const reviewElement = document.getElementById('review');
         reviewElement.innerHTML = '';
-        quizData.forEach((q, index) => {
+        shuffledQuestions.forEach((q, index) => {
             const li = document.createElement('li');
             li.textContent = `${index + 1}. ${q.question} - Doğru cevap: ${q.correct}`;
             reviewElement.appendChild(li);
@@ -172,26 +173,25 @@
     }
 
     function restartQuiz() {
+        shuffledQuestions = shuffleArray(quizData).slice(0, maxQuestions);
         currentQuestionIndex = 0;
         score = 0;
         quizContainer.style.display = 'block';
         resultElement.style.display = 'none';
-        updateProgress();
         loadQuestion();
     }
 
-    function updateProgress() {
-        const progress = (currentQuestionIndex / quizData.length) * 100;
-        progressBar.style.width = `${progress}%`;
+    function updateQuestionCount() {
+        questionCountElement.textContent = `${currentQuestionIndex + 1}/${maxQuestions} soru`;
     }
 
     submitButton.addEventListener('click', () => {
-        const selectedChoice = document.querySelector('input[name="choice"]:checked');
+        const selectedChoice = document.querySelector('.choices li.selected');
         if (!selectedChoice) return;
 
-        const correctAnswer = quizData[currentQuestionIndex].correct;
+        const correctAnswer = shuffledQuestions[currentQuestionIndex].correct;
 
-        if (selectedChoice.value === correctAnswer) {
+        if (selectedChoice.textContent === correctAnswer) {
             score++;
             feedbackElement.textContent = "Doğru!";
             feedbackElement.classList.add('correct');
@@ -202,21 +202,25 @@
             feedbackElement.classList.remove('correct');
         }
         feedbackElement.style.display = 'block';
-
-        setTimeout(() => {
-            feedbackElement.style.display = 'none';
-            nextQuestion();
-        }, 2000);
+        submitButton.style.display = 'none';
+        nextButton.style.display = 'block';
     });
 
-    function nextQuestion() {
+    nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
-        if (currentQuestionIndex < quizData.length) {
+        if (currentQuestionIndex < maxQuestions) {
             loadQuestion();
-            updateProgress();
         } else {
             showResult();
         }
+    });
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     }
 </script>
 
