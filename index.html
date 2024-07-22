@@ -107,7 +107,7 @@
 
 <div id="quiz-container">
     <div id="progress">
-        <span id="question-count">0/10 soru</span>
+        <span id="question-count">0/9 soru</span>
     </div>
     <div id="quiz">
         <div class="question" id="question"></div>
@@ -121,7 +121,7 @@
 <div id="result">
     <h2>Sonuç</h2>
     <p id="score"></p>
-    <ul id="review"></ul>
+    <img id="result-image" src="Solo_Test.jpg" alt="Sonuç Görseli" style="width: 100%; display: none;">
     <button class="button" onclick="restartQuiz()">Tekrar Başla</button>
 </div>
 
@@ -132,7 +132,8 @@
     let shuffledQuestions = [];
     let currentQuestionIndex = 0;
     let score = 0;
-    const maxQuestions = 10;
+    const maxQuestions = 9;
+    const pointsPerQuestion = 25;
 
     const startButton = document.getElementById('start-button');
     const startScreen = document.getElementById('start-screen');
@@ -145,6 +146,7 @@
     const feedbackElement = document.getElementById('feedback');
     const questionCountElement = document.getElementById('question-count');
     const reportButton = document.getElementById('report');
+    const resultImage = document.getElementById('result-image');
 
     // JSON dosyasını yükle
     fetch('questions.json')
@@ -187,7 +189,7 @@
     function checkAnswer(selectedChoice, li) {
         const correctAnswer = shuffledQuestions[currentQuestionIndex].correct;
         if (selectedChoice === correctAnswer) {
-            score++;
+            score += pointsPerQuestion;
             feedbackElement.textContent = "Doğru!";
             feedbackElement.classList.add('correct');
             feedbackElement.classList.remove('incorrect');
@@ -230,14 +232,8 @@
     function showResult() {
         quizContainer.style.display = 'none';
         resultElement.style.display = 'block';
-        scoreElement.textContent = `Skorunuz: ${score}/${maxQuestions}`;
-        const reviewElement = document.getElementById('review');
-        reviewElement.innerHTML = '';
-        shuffledQuestions.forEach((q, index) => {
-            const li = document.createElement('li');
-            li.textContent = `${index + 1}. ${q.question} - Doğru cevap: ${q.correct}`;
-            reviewElement.appendChild(li);
-        });
+        scoreElement.textContent = `Toplam Puanınız: ${score}`;
+        resultImage.style.display = 'block';
     }
 
     function restartQuiz() {
@@ -246,6 +242,7 @@
         score = 0;
         quizContainer.style.display = 'block';
         resultElement.style.display = 'none';
+        resultImage.style.display = 'none';
         loadQuestion();
     }
 
