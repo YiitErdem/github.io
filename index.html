@@ -19,7 +19,7 @@
             flex-direction: column;
             position: relative;
         }
-        #start-screen, #quiz-container, #result {
+        #start-screen, #quiz-container, #result, #reports {
             width: 300px;
             text-align: center;
             display: none;
@@ -91,6 +91,13 @@
         #scoreboard {
             margin-top: 20px;
         }
+        #report-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            padding: 5px 10px;
+        }
         @media (max-width: 600px) {
             #quiz-container {
                 width: 90%;
@@ -138,7 +145,15 @@
     </div>
 </div>
 
+<div id="reports">
+    <h2>Hatalı Sorular</h2>
+    <ul id="report-list"></ul>
+    <button class="button" onclick="hideReports()">Kapat</button>
+</div>
+
 <div id="footer">yiit♥sude-2024</div>
+
+<button class="button" id="report-button">Hatalı Soruları Görüntüle</button>
 
 <script>
     let quizData = [];
@@ -163,6 +178,9 @@
     const playerNameInput = document.getElementById('player-name');
     const saveScoreButton = document.getElementById('save-score');
     const scoreList = document.getElementById('score-list');
+    const reportList = document.getElementById('report-list');
+    const reportsElement = document.getElementById('reports');
+    const reportButtonView = document.getElementById('report-button');
 
     let scores = JSON.parse(localStorage.getItem('scores')) || [];
     let reports = JSON.parse(localStorage.getItem('reports')) || [];
@@ -258,6 +276,24 @@
         localStorage.setItem('reports', JSON.stringify(reports));
         alert('Bu soru hatalı olarak bildirildi.');
     });
+
+    reportButtonView.addEventListener('click', () => {
+        reportsElement.style.display = 'block';
+        updateReportList();
+    });
+
+    function updateReportList() {
+        reportList.innerHTML = '';
+        reports.forEach((report, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${index + 1}. ${report}`;
+            reportList.appendChild(li);
+        });
+    }
+
+    function hideReports() {
+        reportsElement.style.display = 'none';
+    }
 
     function showResult() {
         quizContainer.style.display = 'none';
