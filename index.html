@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Oyunu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
-        #quiz-container {
+        #start-screen, #quiz-container, #result {
             width: 300px;
-            margin: auto;
             text-align: center;
+            display: none;
+        }
+        #quiz-container, #result {
+            display: none;
         }
         .question {
             font-size: 20px;
@@ -26,6 +39,14 @@
         }
         .button {
             margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
         }
         .correct-answer {
             color: green;
@@ -33,21 +54,58 @@
         .incorrect-answer {
             color: red;
         }
+        #feedback {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        #progress {
+            width: 100%;
+            background-color: #ddd;
+            margin-top: 10px;
+        }
+        #progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: #4caf50;
+        }
+        @media (max-width: 600px) {
+            #quiz-container {
+                width: 90%;
+            }
+            .question {
+                font-size: 18px;
+            }
+            .choices li {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
 
+<div id="start-screen">
+    <h1>Quiz Oyunu</h1>
+    <p>Bilgini test etmeye hazır mısın?</p>
+    <button class="button" id="start-button">Başla</button>
+</div>
+
 <div id="quiz-container">
+    <div id="progress">
+        <div id="progress-bar"></div>
+    </div>
     <div id="quiz">
         <div class="question" id="question"></div>
         <ul class="choices" id="choices"></ul>
         <button class="button" id="submit">Cevapla</button>
+        <p id="feedback" style="display: none;"></p>
     </div>
-    <div id="result" style="display: none;">
-        <h2>Sonuç</h2>
-        <p id="score"></p>
-        <button class="button" onclick="restartQuiz()">Tekrar Başla</button>
-    </div>
+</div>
+
+<div id="result">
+    <h2>Sonuç</h2>
+    <p id="score"></p>
+    <ul id="review"></ul>
+    <button class="button" onclick="restartQuiz()">Tekrar Başla</button>
 </div>
 
 <script>
@@ -55,22 +113,33 @@
     let currentQuestionIndex = 0;
     let score = 0;
 
+    const startButton = document.getElementById('start-button');
+    const startScreen = document.getElementById('start-screen');
+    const quizContainer = document.getElementById('quiz-container');
     const questionElement = document.getElementById('question');
     const choicesElement = document.getElementById('choices');
     const submitButton = document.getElementById('submit');
     const resultElement = document.getElementById('result');
     const scoreElement = document.getElementById('score');
+    const feedbackElement = document.getElementById('feedback');
+    const progressBar = document.getElementById('progress-bar');
 
     // JSON dosyasını yükle
     fetch('questions.json')
         .then(response => response.json())
         .then(data => {
             quizData = data;
-            loadQuestion();
         })
         .catch(error => console.error('Error loading JSON:', error));
 
+    startButton.addEventListener('click', () => {
+        startScreen.style.display = 'none';
+        quizContainer.style.display = 'block';
+        loadQuestion();
+    });
+
     function loadQuestion() {
+        feedbackElement.style.display = 'none';
         const currentQuestion = quizData[currentQuestionIndex];
         questionElement.textContent = currentQuestion.question;
         choicesElement.innerHTML = '';
@@ -87,17 +156,30 @@
     }
 
     function showResult() {
-        quiz.style.display = 'none';
+        quizContainer.style.display = 'none';
         resultElement.style.display = 'block';
         scoreElement.textContent = `Skorunuz: ${score}/${quizData.length}`;
+        const reviewElement = document.getElementById('review');
+        reviewElement.innerHTML = '';
+        quizData.forEach((q, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${index + 1}. ${q.question} - Doğru cevap: ${q.correct}`;
+            reviewElement.appendChild(li);
+        });
     }
 
     function restartQuiz() {
         currentQuestionIndex = 0;
         score = 0;
-        quiz.style.display = 'block';
+        quizContainer.style.display = 'block';
         resultElement.style.display = 'none';
+        updateProgress();
         loadQuestion();
+    }
+
+    function updateProgress() {
+        const progress = (currentQuestionIndex / quizData.length) * 100;
+        progressBar.style.width = `${progress}%`;
     }
 
     submitButton.addEventListener('click', () => {
@@ -108,34 +190,30 @@
 
         if (selectedChoice.value === correctAnswer) {
             score++;
-            nextQuestion();
+            feedbackElement.textContent = "Doğru!";
+            feedbackElement.classList.add('correct');
+            feedbackElement.classList.remove('incorrect');
         } else {
-            showCorrectAnswer(correctAnswer);
+            feedbackElement.textContent = `Yanlış! Doğru cevap: ${correctAnswer}`;
+            feedbackElement.classList.add('incorrect');
+            feedbackElement.classList.remove('correct');
         }
+        feedbackElement.style.display = 'block';
+
+        setTimeout(() => {
+            feedbackElement.style.display = 'none';
+            nextQuestion();
+        }, 2000);
     });
 
     function nextQuestion() {
         currentQuestionIndex++;
         if (currentQuestionIndex < quizData.length) {
             loadQuestion();
+            updateProgress();
         } else {
             showResult();
         }
-    }
-
-    function showCorrectAnswer(correctAnswer) {
-        const choices = document.querySelectorAll('input[name="choice"]');
-        choices.forEach(choice => {
-            if (choice.value === correctAnswer) {
-                choice.parentElement.classList.add('correct-answer');
-            } else if (choice.checked) {
-                choice.parentElement.classList.add('incorrect-answer');
-            }
-        });
-
-        setTimeout(() => {
-            nextQuestion();
-        }, 2000);
     }
 </script>
 
